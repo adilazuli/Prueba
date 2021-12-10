@@ -1,0 +1,153 @@
+body {
+    background: rgb(10, 9, 25);
+    background: linear-gradient(48deg, rgba(10, 9, 25, 1) 35%, rgba(27, 23, 66, 1) 100%);
+    font-family: 'Rubik', sans-serif;
+}
+
+:theme-dark {
+    --primario: #fff;
+    --secundario: #EA5F5F;
+    --background: rgb(10, 9, 25);
+}
+
+.decoration {
+    width: 525px;
+    height: 35px;
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.44);
+    border-radius: 12px;
+}
+
+.navbar-brand {
+    padding-top: 30px;
+    color: #468BE8;
+}
+
+#video-preview {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.panel {
+    height: 360px;
+    border-radius: 12px;
+    color: white;
+}
+
+.btn-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #468BE8;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-show:hover {
+
+    background:#468BE8;
+
+    color: white;
+
+}
+
+.btn-upload {
+    color: white;
+    cursor: pointer;
+    background-color: #EA5F5F;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 30px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    width: 190px;
+}
+
+.btn-upload span {
+    padding-left: 8px;
+}
+
+.btn-upload:hover {
+    background-color: #FD7F7F;
+}
+
+#videoFile, #audioFile {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+audio {
+    border-radius: 20px;
+}
+
+.result-panel {
+    color: white;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.result-panel h2 {
+    font-weight: 500;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.temas {
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.tema {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.tema1 {
+    background-color: white;
+}
+
+.tema2 {
+    background-color: #468BE8;
+}
+
+.row-fluid {
+    white-space: nowrap;
+}
+
+.row-fluid .col-lg-3 {
+    display: inline-block;
+}
+
+.fade{
+    opacity: 1;
+    display: none;
+    -webkit-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.fade.activo{
+    opacity: 1;
+    display: block;
+}
+
+
+.plyr__control--overlaid.blanco, .plyr__control.blanco, .plyr--full-ui input[type="range"].blanco{
+    background: white;
+    color: #468BE8;
+}
+
+.plyr__control--overlaid.azul, .plyr__control.azul, .plyr--full-ui input[type="range"].azul{
+    background: #468BE8;
+    color: white;
+}
